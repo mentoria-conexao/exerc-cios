@@ -1,16 +1,20 @@
 package romanos;
 
+import java.util.Scanner;
+
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Romano romano1=new Romano("XX");
-		Romano romano2=new Romano("XVI");
-		Romano romano3=new Romano("CXLIX");
+		Scanner leitura = new Scanner (System.in);
 		
-		System.out.println(romano1.getValor());
-		System.out.println(romano2.getValor());
-		System.out.println(romano3.getValor());
+		String r1= leitura.next();
+		String r2= leitura.next();
+		
+		System.out.println(new Romano(r1).somaRomanos(new Romano(r2)));
+		
+		
+	
 	}
 }
